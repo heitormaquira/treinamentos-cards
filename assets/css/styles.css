@@ -107,7 +107,7 @@ img {
 }
 
 .card__button:hover {
-    background-color: var(--hover-color); /* Efeito hover no botão */
+    background-color: #0b5ed7; /* Efeito hover no botão */
 }
 
 .card__article:hover {
