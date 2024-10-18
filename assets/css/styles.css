@@ -4,7 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
     --first-color: #FFFFFF;
-    --second-color: #333333;
+    --second-color: #999999;
     --hover-color: hsl(0, 0%, 45%);
     --body-font: "Lato", sans-serif;
     --h2-font-size: 0.85rem; /* Tamanho reduzido do título */
@@ -80,9 +80,9 @@ img {
 
 .card__name {
     font-size: 20px;
-    color: #0000a0;
+    color: #777777;
     text-align: left;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     margin-bottom: 0rem;
 }
 
@@ -95,7 +95,7 @@ img {
 }
 
 .card__button {
-    background-color: #999999;
+    background-color:#0000a0;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 1.8rem;
@@ -125,8 +125,8 @@ img {
   width: initial;
   height: initial;
   font-size: 4rem;
-  color: #dbdbdb;
-  top: 10rem;
+  color: #ffffff;
+  top: 13rem;
   transition: color 0.3s ease;
 }
 
