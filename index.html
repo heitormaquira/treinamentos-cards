@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive card slider</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="card__container swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Cartões individuais do carrossel -->
+                <article class="card__article swiper-slide">
+                    <div class="card__image">
+                        <a href="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" target="_blank">
+                            <img src="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" alt="image" class="card__img">
+                        </a>
+                        <div class="card__shadow"></div>
+                    </div>
+                    <h2 class="card__name">Curso 1</h2>
+                    <p class="card__description">Este é um curso de introdução ao assunto.</p>
+                    <a href="https://maquira.com.br" class="card__button" target="_blank">Acessar</a>
+                </article>
+
+                <article class="card__article swiper-slide">
+                    <div class="card__image">
+                        <a href="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" target="_blank">
+                            <img src="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" alt="image" class="card__img">
+                        </a>
+                        <div class="card__shadow"></div>
+                    </div>
+                    <h2 class="card__name">Curso 2</h2>
+                    <p class="card__description">Este curso aborda tópicos avançados.</p>
+                    <a href="https://maquira.com.br" class="card__button" target="_blank">Acessar</a>
+                </article>
+
+                <article class="card__article swiper-slide">
+                    <div class="card__image">
+                        <a href="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" target="_blank">
+                            <img src="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" alt="image" class="card__img">
+                        </a>
+                        <div class="card__shadow"></div>
+                    </div>
+                    <h2 class="card__name">Curso 3</h2>
+                    <p class="card__description">Este curso aborda tópicos interessantes.</p>
+                    <a href="https://maquira.com.br" class="card__button" target="_blank">Acessar</a>
+                </article>
+
+                <article class="card__article swiper-slide">
+                    <div class="card__image">
+                        <a href="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" target="_blank">
+                            <img src="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" alt="image" class="card__img">
+                        </a>
+                        <div class="card__shadow"></div>
+                    </div>
+                    <h2 class="card__name">Curso 4</h2>
+                    <p class="card__description">Este curso é avançado em suas áreas de foco.</p>
+                    <a href="https://maquira.com.br" class="card__button" target="_blank">Acessar</a>
+                </article>
+                
+                <!-- Adicione mais cartões conforme necessário -->
+
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script>
+        // Configuração do Swiper
+        var swiper = new Swiper(".swiper", {
+            slidesPerView: 4, // Exibir 4 colunas
+            spaceBetween: 32, // Espaço entre os slides
+            loop: true, // Loop contínuo
+            autoplay: {
+                delay: 5000, // Autoplay a cada 5 segundos
+                disableOnInteraction: false, // Continuar autoplay mesmo após interação
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // Para uma transição suave
+            speed: 800,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 32,
+                }
+            }
+        });
+
+        // Efeito de hover nos botões de navegação
+        document.querySelector('.swiper-button-next').addEventListener('mouseenter', function () {
+            this.style.color = '999999'; // Cor quando o hover acontece
+        });
+        document.querySelector('.swiper-button-next').addEventListener('mouseleave', function () {
+            this.style.color = ''; // Voltar à cor padrão
+        });
+
+        document.querySelector('.swiper-button-prev').addEventListener('mouseenter', function () {
+            this.style.color = '999999'; // Cor quando o hover acontece
+        });
+        document.querySelector('.swiper-button-prev').addEventListener('mouseleave', function () {
+            this.style.color = ''; // Voltar à cor padrão
+        });
+    </script>
+</body>
+
+</html>
