@@ -59,7 +59,19 @@
                     <a href="https://maquira.com.br" class="card__button" target="_blank">Acessar</a>
                 </article>
 
-                <!-- Você pode adicionar mais cartões, se necessário -->
+                <article class="card__article swiper-slide">
+                    <div class="card__image">
+                        <a href="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" target="_blank">
+                            <img src="https://maquira.com.br/wp-content/uploads/2023/05/m1.jpg" alt="image" class="card__img">
+                        </a>
+                        <div class="card__shadow"></div>
+                    </div>
+                    <h2 class="card__name">Curso 4</h2>
+                    <p class="card__description">[Teste curso] Este é um curso de introdução ao assunto.</p>
+                    <a href="https://maquira.com.br" class="card__button" target="_blank">Acessar</a>
+                </article>
+                
+                <!-- Adicione mais cartões conforme necessário -->
 
             </div>
 
@@ -83,7 +95,7 @@
     <script>
         // Configuração do Swiper
         var swiper = new Swiper(".swiper", {
-            slidesPerView: 3, // Exibir 3 colunas
+            slidesPerView: 4, // Exibir 4 colunas
             spaceBetween: 32, // Espaço entre os slides
             loop: true, // Loop contínuo
             autoplay: {
@@ -106,7 +118,7 @@
                     spaceBetween: 20,
                 },
                 1024: {
-                    slidesPerView: 3, // Mudar para 3 aqui também
+                    slidesPerView: 4,
                     spaceBetween: 32,
                 }
             }
