@@ -54,8 +54,8 @@ img {
 
 .card__article {
     background-color: var(--first-color);
-    padding: 1.3rem;
-    border-radius: 1.5rem;
+    padding: 1.1rem;
+    border-radius: 1.52rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -79,8 +79,8 @@ img {
 }
 
 .card__name {
-    font-size: var(--h2-font-size);
-    color: var(--second-color);
+    font-size: 20px;
+    color: #0000a0;
     text-align: left;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
@@ -98,13 +98,13 @@ img {
     background-color: #999999;
     color: white;
     font-size: var(--button-font-size);
-    padding: 0.5rem 1.65rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 1.8rem;
     display: inline-block;
     text-align: center;
     transition: background-color 0.3s ease;
-    font-size: 10px;
-    width: 40%;
+    font-size: 15px;
+    width: 45%;
 }
 
 .card__button:hover {
