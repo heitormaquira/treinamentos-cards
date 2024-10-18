@@ -8,8 +8,8 @@
     --hover-color: hsl(0, 0%, 45%);
     --body-font: "Lato", sans-serif;
     --h2-font-size: 0.85rem; /* Tamanho reduzido do título */
-    --normal-font-size: 0.75rem; /* Tamanho reduzido da descrição */
-    --button-font-size: 0.75rem; /* Tamanho do botão reduzido */
+    --normal-font-size: 0.90rem; /* Tamanho reduzido da descrição */
+    --button-font-size: 1rem; /* Tamanho do botão reduzido */
 }
 
 /*=============== BASE ===============*/
@@ -91,20 +91,19 @@ img {
     text-align: left;
     margin: 0.5rem 0;
     color: var(--second-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card__button {
     background-color: #999999;
     color: white;
-    font-size: var(--button-font-size);
     padding: 0.5rem 1.5rem;
     border-radius: 1.8rem;
     display: inline-block;
     text-align: center;
     transition: background-color 0.3s ease;
-    font-size: 15px;
-    width: 45%;
+    font-size: 17px;
+    width: 53%;
 }
 
 .card__button:hover {
