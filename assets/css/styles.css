@@ -61,7 +61,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     /* Adiciona a borda fina */
     border: 1px solid rgba(0, 0, 0, 0.1); /* Cor e opacidade da borda */
@@ -112,9 +112,10 @@ img {
 
 .card__article:hover {
     transform: scale(1.05); /* Hover no card inteiro */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Efeito de sombreamento ao passar o mouse */
 }
 
-/*=============== Botões de navegação - Design Original ===============*/
+/*=============== Botões de navegação com efeito de sombreamento arredondado ===============*/
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: "";
@@ -127,12 +128,15 @@ img {
   font-size: 4rem;
   color: #ffffff;
   top: 13rem;
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%; /* Torna os botões redondos */
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: var(--hover-color); /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+  box-shadow: 0 8px 24px rgb(0 0 0 / 45%); /* Sombreamento ao passar o mouse */
+  border-radius: 60%; /* Sombreamento arredondado */
 }
 
 .swiper-button-prev {
