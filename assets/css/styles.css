@@ -209,7 +209,7 @@ img {
 
 .card__name {
     font-size: 20px;
-    color: #777777;
+    color: #0000a0;
     text-align: left;
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -224,7 +224,7 @@ img {
 }
 
 .card__button {
-    background-color:#0000a0;
+    background-color:#929292;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 1.8rem;
@@ -236,7 +236,7 @@ img {
 }
 
 .card__button:hover {
-    background-color: #0b5ed7; /* Efeito hover no botão */
+    background-color: #0000a0; /* Efeito hover no botão */
 }
 
 .card__article:hover {
@@ -255,7 +255,7 @@ img {
   width: initial;
   height: initial;
   font-size: 4rem;
-  color: #0000a0;
+  color: #929292;
   top: 37rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 50%; /* Torna os botões redondos */
