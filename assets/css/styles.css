@@ -28,135 +28,6 @@ body {
     flex-direction: column;
 }
 
-/*=============== CARD ===============*/
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    padding: 0.5rem;
-    position: relative; /* Necessário para posicionar os botões */
-}
-
-.card__container {
-    padding-block: 4rem;
-    overflow: hidden;
-}
-
-.card__article {
-    background-color: var(--first-color);
-    padding: 1.1rem;
-    border-radius: 1.52rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    /* Adiciona a borda fina */
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Cor e opacidade da borda */
-}
-
-.card__image {
-    position: relative;
-    overflow: hidden;
-}
-
-.card__img {
-    width: 100%;
-    border-radius: 20px;
-    margin-bottom: 0.5rem;
-}
-
-.card__name {
-    font-size: 20px;
-    color: #777777;
-    text-align: left;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
-
-.card__description {
-    font-size: var(--normal-font-size);
-    text-align: left;
-    margin: 0.5rem 0;
-    color: var(--second-color);
-    margin-bottom: 1rem;
-}
-
-.card__button {
-    background-color: #0000a0;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1.8rem;
-    display: inline-block;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    font-size: 17px;
-    width: 55%;
-}
-
-.card__button:hover {
-    background-color: #0b5ed7; /* Efeito hover no botão */
-}
-
-.card__article:hover {
-    transform: scale(1.05); /* Hover no card inteiro */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Efeito de sombreamento ao passar o mouse */
-}
-
-/*=============== Botões de navegação ===============*/
-.swiper-button-prev:after,
-.swiper-button-next:after {
-    content: "";
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-    width: initial;
-    height: initial;
-    font-size: 4rem;
-    color: #0000a0;
-    position: absolute; /* Para permitir centralização */
-    bottom: 20px; /* Distância da parte inferior */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 50%; /* Torna os botões redondos */
-}
-
-.swiper-button-prev {
-    left: 35%; /* Ajusta a posição do botão anterior */
-}
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap");
-
-/*=============== VARIABLES CSS ===============*/
-:root {
-    --first-color: #FFFFFF;
-    --second-color: #999999;
-    --hover-color: hsl(0, 0%, 45%);
-    --body-font: "Lato", sans-serif;
-    --h2-font-size: 0.85rem; /* Tamanho reduzido do título */
-    --normal-font-size: 0.90rem; /* Tamanho reduzido da descrição */
-    --button-font-size: 1rem; /* Tamanho do botão reduzido */
-}
-
-/*=============== BASE ===============*/
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-size: 1.7rem;
-    font-family: 'Merriweather Sans', sans-serif;
-    background: #ffffff;
-    color: #929292;
-    display: flex;
-    flex-direction: column;
-}
-
 a {
     text-decoration: none;
 }
@@ -225,18 +96,20 @@ img {
 
 .card__button {
     background-color:#929292;
+    transition: background-color 0.3s ease;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 1.8rem;
     display: inline-block;
     text-align: center;
-    transition: background-color 0.3s ease;
     font-size: 17px;
     width: 55%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card__button:hover {
     background-color: #0000a0; /* Efeito hover no botão */
+    transform: scale(1.05);
 }
 
 .card__article:hover {
