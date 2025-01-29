@@ -44,12 +44,13 @@ img {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    padding: 0.5rem;
+    
 }
 
 .card__container {
-    padding-block: 4rem;
+    padding-block: 5rem;
     overflow: hidden;
+    padding: 1.2rem;
 }
 
 .card__article {
@@ -100,10 +101,12 @@ img {
     padding: 0.5rem 1.5rem;
     border-radius: 1.8rem;
     display: inline-block;
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 14px;
     width: 55%;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: left; /* Centraliza o botão */
+    font-weight: bold
 }
 
 .card__button:hover {
@@ -112,8 +115,8 @@ img {
 }
 
 .card__article:hover {
-    transform: scale(1.05); /* Hover no card inteiro */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Efeito de sombreamento ao passar o mouse */
+    transform: scale(1.03); /* Hover no card inteiro */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Efeito de sombreamento ao passar o mouse */
 }
 
 /*=============== Botões de navegação com efeito de sombreamento arredondado ===============*/
@@ -136,8 +139,6 @@ img {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   transform: scale(1.2); /* Efeito de escala ao passar o mouse */
-
-  
 }
 
 .swiper-button-prev {
